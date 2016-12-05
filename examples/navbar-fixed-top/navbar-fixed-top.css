@@ -1,0 +1,8 @@
+body {
+  padding-top: 	70px;
+  min-height: 2000px;  
+}
+.navbar-fixed-top{
+	background: #00a65a;
+	color: #fff;
+}

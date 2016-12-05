@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<title>PESANFUTSAL</title>
+		<link href="dist/css/bootstrap.css" rel="stylesheet">
+		<link href="dist/plugins/datepicker/datepicker3.css" rel="stylesheet">
+		<link href="dist/plugins/timepicker/timepicker.min.css" rel="stylesheet">
+
+	    <!-- Custom styles for this template -->
+	    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+	    <link href="dist/css/css.css" rel="stylesheet">
+	</head>
+	<body style="padding:70px">
+		<nav class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	          <a class="navbar-brand" href="index.html"><strong> PESAN FUTSAL </strong></a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          	<ul class="nav navbar-nav navbar-right">
+	            	<li><a href="#">Login</a></li>
+	            	<li><a href="#">Sign Up</a></li>
+	          	</ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+	    <div class="header">
+	    	<h1 style="text-align:center"> Hasil Pencarian </h1>
+	    </div>
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="col-md-1"></div>
+		    	<div class="col-md-11">
+		    		<h3>Ubah pencarian</h3>
+		    	</div>
+	    		<div class="col col-md-12">
+		      		<div class="col col-md-1"></div>
+		      		<div class="col col-md-2"><input class="form-control" placeholder="Lokasi"></div>
+		      		<div class="col col-md-2"><input class="form-control" placeholder="Tanggal" data-provide="datepicker"></div>
+			      	<div class="col col-md-2"><input id="timepicker" class="form-control" data-provide="timepicker" data-template="modal" data-minute-step="1" data-modal-backdrop="true" type="text" placeholder="Waktu"/></div>
+			      	<div class="col col-md-2"><input class="form-control" placeholder="Durasi"></div>
+			      	<div class="col col-md-2"><a class="btn btn-warning btn-pj" href="#">Cari</a></div>
+		      		<div class="col col-md-1"></div>
+	      		</div>
+	    		<div class="col-md-12">
+	    			<table class="table">
+	    				<thead>
+	    					<tr>
+	    						<th style="text-align:center">
+	    							Nama Tempat
+	    						</th>
+	    						<th style="text-align:center">
+	    							Jenis Lapangan
+	    						</th>
+	    						<th style="text-align:center">
+	    							Biaya sewa
+	    						</th>
+	    						<th style="text-align:center">
+	    							Keterangan
+	    						</th>
+	    					</tr>
+	    				</thead>
+	    				<tbody>
+	    					<tr>
+	    						<th style="text-align:center">Tifosi</th>
+	    						<th style="text-align:center">Rumput Sintetis</th>
+	    						<th style="text-align:center">150.000</th>
+	    						<th style="text-align:center"><a class="btn btn-success" href="lapangan.html">Detail Lapangan</a>|<a class="btn btn-primary" href="" data-toggle="modal" data-target="#myModal">Booking</a></th>
+	    					</tr>
+	    					<tr>
+	    						<th style="text-align:center">Planet</th>
+	    						<th style="text-align:center">Biasa</th>
+	    						<th style="text-align:center">150.000</th>
+	    						<th style="text-align:center"><a class="btn btn-success" href="">Detail Lapangan</a>|<a class="btn btn-primary" href="">Booking</a></th>
+	    					</tr>
+	    					<tr>
+	    						<th style="text-align:center">Planet</th>
+	    						<th style="text-align:center">Rumput Sintetis</th>
+	    						<th style="text-align:center">120.000</th>
+	    						<th style="text-align:center"><a class="btn btn-success" href="">Detail Lapangan</a>|<a class="btn btn-primary" href="">Booking</a></th>
+	    					</tr>
+	    					<tr>
+	    						<th style="text-align:center">Golden Goal</th>
+	    						<th style="text-align:center">Biasa</th>
+	    						<th style="text-align:center">160.000</th>
+	    						<th style="text-align:center"><a class="btn btn-success" href="">Detail Lapangan</a>|<a class="btn btn-primary" href="">Booking</a></th>
+	    					</tr>
+	    				</tbody>
+	    			</table>	
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- Button trigger modal -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>Anda memesan lapangan pada hari <strong>Senin, 28 November 2016 jam 21-00 durasi 2 jam</strong></p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <a href="pembayaran.html"><button type="button" class="btn btn-primary">Lanjut</button></a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<script type="text/javascript">
+				$('#myModal').on('shown.bs.modal', function () {
+				  $('#myModal').focus()
+				})
+			</script>
+			<script src="dist/js/jquery.min.js"></script>
+	    	<script src="dist/js/bootstrap.min.js"></script>
+	    
+	</body>
+</html>

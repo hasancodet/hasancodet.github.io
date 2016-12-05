@@ -1,0 +1,91 @@
+<div class="payment-list mb-15 payment-active">
+    <div class="payment_item" id="manualtransfer" active="" gateway-choose="MANUALTRANSFER">
+        <span class="payment_dot"><i class="icon-checked set"></i></span>
+        <h2>Transfer Manual</h2>
+        <p class="logo-payment" style="display: none;">
+            <img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-bca.png" alt="" height="40">
+            <img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-mandiri.png" alt="" height="40">
+            <img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-bri.png" alt="" height="40">
+            <img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-bni.png" alt="" height="40">
+            <img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-cimb.png" alt="" height="40">
+        </p>
+    </div>
+
+    <div style="display: block;" class="payment_type" data-payment-panel="MANUALTRANSFER">
+        <div class="payment_error text-center margin-error mb-20 active" style="display: none"></div>
+        <div class="">
+            <div class="payment">
+                <div class="payment-form mt-10" cc-additional="1">
+                    <div class="row pl-10 pr-10">
+                        <div class="col-sm-6 p-5">
+                            <div class="payment-form-title bold mb-10">
+                                <p class="m-0">Bank Tujuan</p>
+                            </div>
+                            <div class="form-group transfer_bank" input-name="bank-id">
+                                <div class="custom-select ">
+                                    <div class="custom-select-input form-control" onclick="editBank()">
+                                        <div class="custom-select-placeholder">
+                                            Pilih Bank
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="caret"></span>
+                                        </div>
+                                    </div>
+                                    <ul class="custom-select-option" style="">
+                                    <li data-value="1" id="list-1" class="list-rekening" data-acc-no="" data-acc-name=""><span class="pay_pict"><img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-bca.png" alt="" class="mt-10" width="60"></span><span class="pay_content"><h3>Bank BCA</h3></span></li><li data-value="2" id="list-2" class="list-rekening" data-acc-no="" data-acc-name=""><span class="pay_pict"><img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-mandiri.png" alt="" class="mt-10" width="60"></span><span class="pay_content"><h3>Bank Mandiri</h3></span></li><li data-value="4" id="list-4" class="list-rekening" data-acc-no="" data-acc-name=""><span class="pay_pict"><img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-bri.png" alt="" class="mt-10" width="60"></span><span class="pay_content"><h3>Bank BRI</h3></span></li><li data-value="3" id="list-3" class="list-rekening" data-acc-no="" data-acc-name=""><span class="pay_pict"><img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-bni.png" alt="" class="mt-10" width="60"></span><span class="pay_content"><h3>Bank BNI</h3></span></li><li data-value="5" id="list-5" class="list-rekening" data-acc-no="" data-acc-name=""><span class="pay_pict"><img src="https://ecs7.tokopedia.net/img/toppay/payment-logo/icon-cimb.png" alt="" class="mt-10" width="60"></span><span class="pay_content"><h3>Bank CIMB</h3></span></li></ul>
+                                </div>
+                                <input id="bankid" name="bank_id" type="hidden">
+                                <small error-string="1"></small>
+                            </div> 
+                        </div>            
+                    </div>
+                    <div class="form-group">
+                        <div class="payment-form-title bold mb-10 mt-10">
+                            <p class="m-0">Informasi Rekening Pengirim</p>
+                        </div>
+                        <div class="row pl-10 pr-10">
+                            <div class="col-sm-6 p-5">
+                                <label for="accountname">Nama Pemilik Rekening</label>
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div input-name="account-name">
+                                            <input class="form-control" id="accountname" placeholder="Nama Pemilik Rekening" name="account_name" max-length="50" type="text">
+                                            <small error-string="1"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 p-5">
+                                <label for="accountnumber">No Rekening</label>
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div input-name="account-number">
+                                            <input class="form-control" id="accountnumber" placeholder="No Rekening" name="account_number" max-length="25" type="text">
+                                            <small error-string="1"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-left fs-12 mt-0 mb-20">
+                           Jika melalui teller, isi Nomor Rekening dengan <strong>0000</strong>.
+                        </div>
+                        <div class="text-left save_bank  mt-10 mb-20">
+                            <input id="saveaccount" name="save_account" value="1" type="hidden">
+                            <span class="payment_box mr-5 save-active"><i class="icon-checked set"></i></span>Simpan nomor rekening
+                        </div>
+                    </div>
+
+                    <div>
+    <a style="display: block;" class="btn btn-orange btn-buy-now btn-bayar">Bayar Sekarang</a>
+    <a class="btn btn-orange btn-buy-now btn-wait" disabled="true" style="display:none">
+        Sedang Diproses <img src="https://ecs7.tokopedia.net/img/toppay/waiting.gif" alt="" width="18">
+    </a>
+</div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

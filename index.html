@@ -1,10 +1,117 @@
 <html>
 	<head>
-		<title>hasancodet</title>
+		<title>PESANFUTSAL</title>
+		<link href="dist/css/bootstrap.css" rel="stylesheet">
+		<link href="dist/plugins/datepicker/datepicker3.css" rel="stylesheet">
+		<link href="dist/plugins/timepicker/timepicker.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+	    <!-- Custom styles for this template -->
+	    <link href="dist/css/css.css" rel="stylesheet">
 	</head>
-	<body>
-		<h1>hasancodet profile <a href="#">jajal</a> </h1>
-		<h1>hasancodet profile <a href="#">jajal 2</a> </h1>
-		<h1>hasancodet profile <a href="#">jajal 3</a> </h1>
+	<body style="padding-top:50px">
+	    <nav class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	          <a class="navbar-brand" href="#"><strong> PESAN FUTSAL </strong></a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          	<ul class="nav navbar-nav navbar-right">
+	            	<li><a href="#">Login</a></li>
+	            	<li><a href="#">Sign Up</a></li>
+	          	</ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+	    
+	    <img src="dist/img/lapangan.jpg" class="back">
+	    
+	      <div class="navbar navbar-default">
+	      	<div class="row">
+	      	<div class="col col-md-12">
+	      		<div class="col col-md-3"></div>
+	      		<div class="col col-md-6"  style="text-align:center;">
+			      	<h2>Cari lapangan Futsal sekarang nggak pake ribet</h2>
+		      	</div>
+		      	<div class="col col-md-3"></div>
+		    </div>
+	      	<div class="col col-md-12">
+	      		<div class="col col-md-1"></div>
+	      		<div class="col col-md-2"><input class="form-control" type="text" placeholder="Lokasi"></div>
+	      		<div class="col col-md-2"><input class="form-control" placeholder="Tanggal" data-provide="datepicker"></div>
+		      	<div class="col col-md-2"><input id="timepicker" class="form-control" data-provide="timepicker" data-template="modal" data-minute-step="1" data-modal-backdrop="true" type="text" placeholder="Waktu"/></div>
+		      	<div class="col col-md-2"><input class="form-control" placeholder="Durasi"></div>
+		      	<div class="col col-md-2"><a href="hasilpencarian.html" class="btn btn-danger btn-pj">Cari</a></div>
+	      		<div class="col col-md-1"></div>
+	      	</div>
+	      	<!-- <div class="col col-md-12">
+	      		<div class="col col-md-1"></div>
+	      		<div class="col col-md-5">
+		      		<input class="form-control" placeholder="Lokasi" type="text">
+		      		<input class="form-control" placeholder="Tanggal" data-provide="datepicker">
+			      	<input id="timepicker" class="form-control" data-provide="timepicker" data-template="modal" data-minute-step="1" data-modal-backdrop="true" type="text" placeholder="Waktu"/>
+			      	<input class="form-control" placeholder="Durasi">
+			      	<a href="hasilpencarian.html" class="btn btn-danger btn-pj">Cari</a>
+			    </div>
+	      		<div class="col col-md-1"></div>
+	      	</div> -->
+	      	
+	      	<div class="col col-md-12">
+	      		<br><br>
+		    </div>
+	      	</div>
+	      </div>
+	      <hr>
+	    <div class="container">
+			    <div class="row">
+			      	<div class="col-md-2"></div>
+			        <div class="col-md-2">
+			          	<img class="img-circle" src="dist/img/tifosi.jpg" alt="Generic placeholder image" height="140" width="140">
+			          	</div><!-- /.col-lg-4 -->
+			        <div class="col-md-2">
+			          	<img class="img-circle" src="dist/img/jakal7.jpg" alt="Generic placeholder image" height="140" width="140">
+			          	</div><!-- /.col-lg-4 -->
+			        <div class="col-md-2">
+			        	<img class="img-circle" src="dist/img/planet.jpg" alt="Generic placeholder image" height="140" width="140">
+			        </div><!-- /.col-lg-4 -->
+			        <div class="col-md-2">
+			          	<img class="img-circle" src="dist/img/golden.jpg" alt="Generic placeholder image" height="140" width="140">
+			        </div>
+			        <div class="col-md-2"></div>
+			    </div><!-- /.row -->
+	      <!-- Main component for a primary marketing message or call to action -->
+	      <!-- <div class="jumbotron">
+	        <h1>Navbar example</h1>
+	        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+	        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+	        <p>
+	          <a class="btn btn-lg btn-success" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+	        </p>
+	      </div> -->
+
+	    </div> <!-- /container -->
+
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	    <script src="dist/js/bootstrap.min.js"></script>
+	    <script src="dist/plugins/datepicker/datepicker.js"></script>
+	    <script src="dist/plugins/timepicker/timepicker.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	    <script type="text/javascript"> 
+	    	$('#timepicker').timepicker({
+                template: 'dropdown',
+                showInputs:true;
+            });
+	    </script>
 	</body>
 </html>

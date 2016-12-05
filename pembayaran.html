@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<title>PESANFUTSAL</title>
+		<link href="dist/css/bootstrap.css" rel="stylesheet">
+		<link href="dist/plugins/datepicker/datepicker3.css" rel="stylesheet">
+		<link href="dist/plugins/timepicker/timepicker.min.css" rel="stylesheet">
+
+  		<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+	    <!-- Custom styles for this template -->
+	    <link href="dist/css/css.css" rel="stylesheet">
+	</head>
+	<body style="padding-top:90px">
+	    <nav class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	          <a class="navbar-brand" href="index.html"><strong> PESAN FUTSAL </strong></a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          	<ul class="nav navbar-nav navbar-right">
+	            	<li><a href="#">Login</a></li>
+	            	<li><a href="#">Sign Up</a></li>
+	          	</ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+	    <div class="container">
+	    	<div class="row">
+	    	<div class="col-md-9">
+	    		<div class="box-body">
+                  <div class="box-group" id="accordion">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    
+                    <div class="panel box box-primary">
+                      <a class="box-header with-border" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <h3 class="box-title">
+                            Transfer Manual 
+                        </h3>
+                        <br>
+                        <img src="dist/img/icon-bni.png"><img src="dist/img/icon-bri.png"><img src="dist/img/icon-bca.png"><img src="dist/img/icon-mandiri.png"><img src="dist/img/icon-cimb.png">
+                      </a>
+                      <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="box-body">
+                          <h5>Nama Bank</h5>
+                          <br>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="col-md-6">
+                                <form>
+                                 <select class="form-control">
+                                    <option >-Pilih Bank-</option>
+                                    <option>BNI</option>
+                                    <option>BRI</option>
+                                    <option>BCA</option>
+                                    <option>MANDIRI</option>
+                                  </select>
+                                </form>
+                              </div>
+                            <div class="col-md-6"></div>
+                            </div>
+                          </div>
+                          <h5>Informasi Pemilik Akun</h5>
+                          <br>
+                            <div class="row">
+                              <div class="col-md-6">
+                                Nama
+                                <br>
+                                <input class="form-control">
+                              </div>
+                              <div class="col-md-6">
+                                Nomor Rekening
+                                <br>
+                                <input class="form-control">  
+                              </div>
+                            </div>
+                            <br>
+                            <div style="text-align:right;"><a href="" class="btn btn-warning btn-pj">BAYAR</a> </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="panel box box-primary">
+                      <a class="box-header with-border" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        <h4 class="box-title">
+                            Gerai Retail / Tunai
+                        </h4>
+                        <br>
+                        <img src="dist/img/alfamart.png"><img src="dist/img/indomaret.png"><img src="dist/img/pospay.png">
+                      </a>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="box-body">
+                          <form>
+                            <input type="radio" name="atm" value="bni"> Alfamart 
+                            <br>
+                            <input type="radio" name="atm" value="bri"> Indomaret
+                            <br>
+                            <input type="radio" name="atm" value="mandiri"> POS
+                            
+                          </form>
+                            <br>
+                            <div style="text-align:right;"><a href="" class="btn btn-warning btn-pj">BAYAR</a> </div>
+                        </div>
+                      </div>      
+                    </div>
+                    <!-- <div class="panel box box-primary">
+                      <a class="box-header with-border" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        <h4 class="box-title">
+                            Collapsible Group Danger
+                        </h4>
+                      </a>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="box-body">
+                          <form>
+                          	<input type="radio" name="atm" value="bni"> BNI 
+                          	<br>
+                          	<input type="radio" name="atm" value="bri"> BRI
+                          	<br>
+                          	<input type="radio" name="atm" value="mandiri"> MANDIRI
+                          </form>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div><!-- /.box-body -->
+
+	    	</div>
+	    	<div class="col-md-3">
+	    		<div class="box-body">
+                  <div class="box-group">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                      <div class="box-header with-border">
+                        <h4 class="box-title">
+                          Jumlah Pembayaran
+                        </h4>
+                      </div>
+                      <div class="box-body">
+                        Jumlah yang dibayarkan sebesar 150.000
+                      </div>
+                    </div>
+                    </div>
+                </div>
+	    	</div>
+	    </div> <!-- col -->
+	    
+	    </div>
+	    
+	    
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="dist/js/jquery.min.js"></script>
+	    <script src="dist/js/bootstrap.min.js"></script>
+	    <script src="dist/plugins/datepicker/datepicker.js"></script>
+	    <script src="dist/plugins/timepicker/timepicker.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	    <!-- AdminLTE App -->
+		<script src="dist/js/lte/app.min.js"></script>
+		<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+		<script src="dist/js/lte/pages/dashboard2.js"></script>
+		<!-- AdminLTE for demo purposes -->
+		<script src="dist/js/lte/demo.js"></script>
+	    <script type="text/javascript"> 
+	    	$('#timepicker').timepicker({
+                template: 'dropdown',
+                showInputs:true;
+            });
+	    </script>
+	</body>
+</html>
