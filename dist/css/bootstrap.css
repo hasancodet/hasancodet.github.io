@@ -1090,7 +1090,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 input,
 button,
@@ -6578,9 +6578,5 @@ button.close {
 }
 
 /* gawe dewe*/
-.back{
-  height: 75%;
-  width: 100%;
-  opacity: 0.75;
-}
+
 /*# sourceMappingURL=bootstrap.css.map */

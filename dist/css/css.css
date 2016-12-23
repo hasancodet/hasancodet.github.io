@@ -145,3 +145,20 @@ fieldset[disabled] .btn-default.active {
 .form-group.has-error .help-block {
   color: #dd4b39;
 }
+
+/*gambar lapangan index*/
+.back{
+  height: 75%;
+  width: 100%;
+}
+
+/*landing page*/
+.tengah{
+  padding-top: 100px;
+}
+.box-transparan {
+  margin: 30px;
+  padding: 30px;
+  background-color: #000000;
+  opacity: 0.6; 
+}
